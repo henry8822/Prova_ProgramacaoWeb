@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS loja;
+USE loja;
+
+CREATE TABLE IF NOT EXISTS produtos (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    marca VARCHAR(255) NOT NULL,
+    preco VARCHAR(255) NOT NULL,
+    url_imagem VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    senha integer NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+SELECT * FROM usuarios;
